@@ -4,10 +4,10 @@
     $.fn.andSelf = function() {
       return this.addBack.apply(this, arguments);
     }
-  
+   $(".section-loader").fadeOut("f");
       /* Loader Code Start */
       $(window).on("load", function() { 
-          $(".section-loader").fadeOut("fast");
+         
           
           var $container = $('.portfolioContainer');
           $container.isotope({
